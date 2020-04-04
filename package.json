@@ -2,7 +2,7 @@
   "name": "aitchison",
   "version": "1.0.0",
   "description": "Typescript library for Aitchison Geometry and Compositional Data",
-  "main": "index.js",
+  "main": "dist/index.js",
   "types": "index.d.ts",
   "scripts": {
     "build": "npm run build:clean && npm run build:start && npm run build:copy",
