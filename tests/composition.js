@@ -9,7 +9,6 @@ console.log(v1);
 console.log(v2);
 console.log(v1.sum());
 console.log(v1.average());
-console.log(v1.len(v2))
 console.log(v1.add(v2))
 
 console.log(v1.constructor.name)
@@ -18,3 +17,7 @@ console.log(v1.add(v2).constructor.name)
 
 console.log(v1.scale(10))
 console.log(v1.perturb(v2))
+
+console.log(v1.sub([0,1,2]))
+console.log(v1.subOne(3))
+console.log(v1.innerProduct(v2))
