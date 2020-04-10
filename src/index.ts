@@ -39,6 +39,7 @@ export class Vector {
 }
 
 export class Composition extends Vector {
+    readonly kappa: number;
     constructor(
         v: number[],
         opts: {
@@ -48,6 +49,7 @@ export class Composition extends Vector {
             }
     ) {
         super(v);
+        this.kappa = this.sum() //defined at constructor
         this.v = (!opts.terse) ? this.closure(this.v) : this.closure(v).slice(0, -1)
     }
     scale(a: number): Composition {
