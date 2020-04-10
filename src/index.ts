@@ -101,5 +101,12 @@ export class Composition extends Vector {
         }
         return (1/(2*this.v.length))*sum
     }
+    alr(): number[]{
+        // Must actually check that it sums to 1 or kappa 
+        const {v:p} = new Composition(this.v,{terse:true})
+        return p.map((x)=>{
+            return  Math.log(x) /this.v[this.v.length-1]
+        }) 
+    }
 
 }

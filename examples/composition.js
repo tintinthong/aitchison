@@ -21,3 +21,6 @@ console.log(v1.perturb(v2))
 console.log(v1.sub([0,1,2]))
 console.log(v1.subOne(3))
 console.log(v1.innerProduct(v2))
+
+const v3 = new Composition([0.1,0.2,0.3,0.4])
+console.log(v3.alr())
