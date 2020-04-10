@@ -52,6 +52,9 @@ export class Composition extends Vector {
         this.kappa = this.sum() //defined at constructor
         this.v = (!opts.terse) ? this.closure(this.v) : this.closure(v).slice(0, -1)
     }
+    valueOf(){
+        return this.v
+    }
     scale(a: number): Composition {
         return new Composition(this.v.map((n) => {
             return Math.pow(n, a) / this.powerSum(a)
