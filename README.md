@@ -5,6 +5,6 @@ Typescript library for Aitchison Geometry and Compositional Data
 
 ```
 npm run build
-node examples/vector
-node examples/composition
+node -r esm examples/vector
+node -r esm examples/composition
 ```

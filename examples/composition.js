@@ -1,5 +1,5 @@
 
-const {Composition} = require('../dist/index');
+import { Composition } from '../dist/index';
 
 // All methods inherited from Vector
 const v1 = new Composition([1,2,3,4])
